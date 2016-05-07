@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Indian Army</title>
+<link rel="icon" type="image/png" href="image\favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="image\favicon-16x16.png" sizes="16x16" />
+<link href="stylepage.css" rel="stylesheet" />
+</head>
+<script type="text/javascript">
+function func1(){
+var x = document.getElementById("age").value;
+if(x<0 || x>100)
+{
+document.getElementById("spanage").innerHTML = "Kindly enter a valid age";
+document.getElementById("age").focus();
+}
+else
+{
+document.getElementById("spanage").innerHTML = "";
+}
+}
+function func2(){
+var x = document.getElementById("height").value;
+if(x<0 || x>20)
+{
+document.getElementById("spanheight").innerHTML = "Kindly enter a valid height";
+document.getElementById("height").focus();
+}
+else
+{
+document.getElementById("spanheight").innerHTML = "";
+}
+}
+function func3(){
+var x = document.getElementById("weight").value;
+if(x<0 || x>200)
+{
+document.getElementById("spanweight").innerHTML = "Kindly enter a valid weight";
+document.getElementById("weight").focus();
+}
+else
+{
+document.getElementById("spanweight").innerHTML = "";
+}
+}
+function func4(){
+var x = document.getElementById("chest").value;
+if(x<0 || x>300)
+{
+document.getElementById("spanchest").innerHTML = "Kindly enter a valid chest";
+document.getElementById("chest").focus();
+}
+else
+{
+document.getElementById("spanchest").innerHTML = "";
+}
+}
+</script>
+<body>
+
+<header>
+<h1>Indian Army</h1><h5>"Service Before Self"</h5>
+</header>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#check">Check Eligibility</a></li>
+</ul>
+<div id="home">
+	<img id="homeimage" src="image\img1.jpg">
+	<img id="homeimage" src="image\img2.jpg">
+	<img id="homeimage" src="image\img3.jpg">
+	<img id="homeimage" src="image\img4.jpg">
+	<img id="homeimage" src="image\img5.jpg">
+	<img id="homeimage" src="image\img6.jpg">
+	<img id="homeimage" src="image\img7.jpg">
+	<img id="homeimage" src="image\img8.jpg">
+</div>
+<br><br>
+<hr>
+<hr>
+<div id="about">
+<h3 class="heading">About Us</h3>
+<p id="para">The infusion of high technology based precision weaponry has enhanced the lethality of future warfare manifold. The spectrum of threat ranges from the nuclear to the conventional and the asymmetric, with terrorism emerging like a hydra-headed monster. Add to this the rigours of climate i.e. the glacial heights and extreme cold, dense mountainous jungles and the heat and simoom of the deserts.<br><br> Such are the trying environments in which a soldier operates. However, to a soldier facing such challenges and going beyond the call of duty is but second nature. Life's turbulences and turmoils have a special flavour for him. For those not exposed to a war or war like environment, this flavour is beyond the realms of imagination.<br><br> The Indian Army soldier is infused by a set of values that make the soldier willingly face a plethora of challenges and difficulties, and when the call may come, to give the ultimate sacrifice in the service of the Nation.<br><br>The ethos of the Army is ingrained in all soldiers with an unwavering will to succeed, accepting their grave responsibility and an unbridled ability to give their lives for others; confident that in return the nation will look after them and their families. </p>
+</div>
+<br>
+<hr>
+<div id="check">
+<div class="heading">
+<h3>Army Recruitment Eligibility Check</h3>
+</div>
+<div class="form">
+<table cellpadding="10">
+<form method="get" action="process.php">
+<tr><td >Age(in years)</td><td><input type="text" name="age"  placeholder="Age" required onChange="func1()" id="age"><span id="spanage"></span></td></tr>
+<tr><td >Height(in inches)</td><td><input type="text" name="height"  placeholder="Height" required onChange="func2()" id="height"><span id="spanheight"></span></td></tr>
+<tr><td >Weight(in kg)</td><td><input type="text" name="weight"  placeholder="Weight" required onChange="func3()" id="weight"><span id="spanweight"></span></td></tr>
+<tr><td >Chest(in cm)</td><td><input type="text" name="chest"  placeholder="Chest" required onChange="func4()" id="chest"><span id="spanchest"></span></td></tr></table><br>
+<input type="submit" value="CHECK"  class="button" ><br><input type="reset" value="RESET"  class="button" >
+</form>
+</div>
+</div>
+<br>
+<hr>
+<footer style="text-align:center;">
+<h4>Made by Biprajeet Pal (13BCE0128) <br> Phone : 9159113260 </h4>
+</footer>
+</body>
+</html>
